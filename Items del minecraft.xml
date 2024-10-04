@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Este documento va indicar 5 tipos de items o objetos del videojuego minecraft y sus características-->
+<minecraftItems lang="es">
+
+    <item>
+        <id>01</id>
+        <name>Espada de diamante</name>
+        <type>Arma</type>
+        <rarity>Diamante</rarity>
+        <damage>7</damage>
+        <description>Espada hecha a base de diamantes</description>  
+    </item>
+
+    <item>
+        <id>02</id>
+        <name>Mesa de crafteo</name>
+        <type>Bloque</type>
+        <rarity>Madera</rarity>
+        <damage>0</damage>
+        <description>Mesa hecha con madera para craftear una gran variedad de objetos y armas</description>  
+    </item>
+
+    <item>
+        <id>03</id>
+        <name>Cofre</name>
+        <type>Bloque</type>
+        <rarity>Madera</rarity>
+        <damage>0</damage>
+        <description>Cofre hecho de madera para guardar objetos y armas dentro del juego</description>  
+    </item>
+
+     <item>
+        <id>04</id>
+        <name>Pico de hierro</name>
+        <type>Herramienta</type>
+        <rarity>Hierro</rarity>
+        <damage>4</damage>
+        <description>Pico que te permite minar para encontrar materiales en una mina</description>  
+    </item>
+
+     <item>
+        <id>05</id>
+        <name>Manzana</name>
+        <type>Comida</type>
+        <rarity>Comun</rarity>
+        <damage>0</damage>
+        <description>Fruta que puedes encontrar en el juego para quitar el hambre</description>  
+    </item>
+
+</minecraftItems>
