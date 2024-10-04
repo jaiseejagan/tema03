@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Este documento va indicar 5 tipos de items o objetos del videojuego minecraft y sus caracteristicas-->
+<minecraftItems lang="es">
+
+    <item>
+        <id>01</id>
+        <name>Espada de diamante</name>
+        <type>Arma</type>
+        <rarity>Diamante</rarity>
+        <damage>7</damage>
+        <description>Espada hecha a base de diamantes</description>  
+        <crafteable>true</crafteable>
+        <materials>
+                <material>Palo</material>
+                <material>Diamante</material>
+        </materials>
+        <enchantable>true</enchantable>
+        <enchantments>
+                <enchantment>Filo</enchantment>
+                <enchantment>Knockback</enchantment>
+                <enchantment>Irrompibilidad</enchantment>
+        </enchantments>
+    </item>
+
+    <item>
+        <id>02</id>
+        <name>Mesa de crafteo</name>
+        <type>Bloque</type>
+        <rarity>Madera</rarity>
+        <damage>0</damage>
+        <description>Mesa hecha con madera para craftear una gran variedad de objetos y armas</description>
+        <crafteable>true</crafteable>
+        <materials>
+                <material>Madera</material>
+        </materials>
+        <enchantable>false</enchantable>
+    </item>
+
+    <item>
+        <id>03</id>
+        <name>Cofre</name>
+        <type>Bloque</type>
+        <rarity>Madera</rarity>
+        <damage>0</damage>
+        <description>Cofre hecho de madera para guardar objetos y armas dentro del juego</description>
+        <crafteable>true</crafteable>
+        <materials>
+            <material>Madera</material>
+        </materials>
+        <enchantable>false</enchantable>  
+    </item>
+
+     <item>
+        <id>04</id>
+        <name>Pico de hierro</name>
+        <type>Herramienta</type>
+        <rarity>Hierro</rarity>
+        <damage>4</damage>
+        <description>Pico que te permite minar para encontrar materiales en una mina</description>
+        <crafteable>true</crafteable>
+        <materials>
+                <material>Palo</material>
+                <material>Hierro</material>
+        </materials>
+        <enchantable>true</enchantable> 
+        <enchantments>
+            <enchantment>Eficiencia</enchantment>
+            <enchantment>Irrompibilidad</enchantment>
+            <enchantment>Eficiencia</enchantment>
+            <enchantment>Fortune</enchantment>
+        </enchantments>
+    </item>
+
+     <item>
+        <id>05</id>
+        <name>Manzana de oro</name>
+        <type>Comida</type>
+        <rarity>Oro</rarity>
+        <damage>0</damage>
+        <description>Manzana que se craftea con oro</description>
+        <crafteable>true</crafteable>
+        <materials>
+            <material>Manzana</material>
+            <material>Oro</material>
+        </materials>    
+        <enchantable>false</enchantable> 
+    </item>
+
+</minecraftItems>
