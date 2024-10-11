@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <notasASIR lang="es">
+
+        <modulos>
+                <modulo idmod="ISO">Implantación de Sistemas Operativos</modulo>
+                <modulo idmod="PAR">Planificación y Administración de Redes</modulo>
+                <modulo idmod="FH">Fundamentos de Hardware</modulo>
+                <modulo idmod="LM">Lenguaje de Marcas</modulo>
+                <modulo idmod="BD">Base de Datos</modulo>
+                <modulo idmod="INP">Inglés Profesional</modulo>
+                <modulo idmod="IP">Intinerario Personal</modulo>
+        </modulos>
+
+        <notasAlumnos av="1"> 
+
+            <alumno id="01">
+
+                <nombre>Pepe</nombre>
+
+                <apellidos>
+                    <apellido>Garcia</apellido>
+                    <apellido>Ivars</apellido>
+                </apellidos>
+
+                <nia>10769123</nia>
+
+                <notas>
+                    <nota idref="ISO">9<nota>
+                    <nota idref="PAR">8<nota>
+                    <nota idref="FH">10<nota>
+                    <nota idref="LM">8<nota>
+                    <nota idref="BD">9<nota>
+                    <nota idref="INP">10<nota>
+                    <nota idref="IP">10<nota>
+                </notas>
+
+            </alumno>
+
+        </notasAlumnos>
+
+    </notasASIR>
