@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <curriculumPersonal lang="es">
+
+            <datosPersonales>
+                <nombre>Jagannath</nombre>
+                <apellidos>Jaisi</apellidos>
+                <numero>632877905</numero>
+            </datosPersonales>        
+
+            <presentacion>
+                Soy una persona trabajadora, responsable y dedicada que busca siempre mejorar en todos los aspectos. 
+                Mi principal motivación son las metas que me pongo a mi mismo y los objetivos que busco superar para un futuro.
+            </presentacion>
+
+            <formacionAcademica>
+
+
+                <formacion idFormacion="01">
+
+                    <nombrecentro>IES Josep Iborra</nombrecentro>
+
+                    <curso>
+                        <tipo>ESO</tipo>
+                        <nivel>1-4</nivel>
+                        <nombre>Educación Secundaria Obligatoria</nombre>
+                    </curso>
+
+                    <lugar>
+                        <localidad>Benissa</localidad>
+                        <provincia>Alicante</provincia>
+                        <codigopostal>03720</codigopostal>
+                    
+                    </lugar>
+
+                    <fecha>
+                        <fechaInicio>12/09/2018</fechaInicio>
+                        <fechaFin>21/06/2022</fechaFin>
+                    </fecha>
+
+                </formacion>
+
+
+                <formacion idFormacion="02">
+
+                    <nombrecentro>IES La Mar</nombrecentro>
+
+                    <curso>
+                        <tipo>FP</tipo>
+                        <nivel>Grado Medio</nivel>
+                        <nombre>Sistemas Microoinformáticos y Redes</nombre>
+                    </curso>
+
+                    <lugar>
+                        <localidad>Jávea/Xàbia</localidad>
+                        <provincia>Alicante</provincia>
+                        <codigopostal>03730</codigopostal>
+                    
+                    </lugar>
+
+                    <fecha>
+                        <fechaInicio>12/09/2022</fechaInicio>
+                        <fechaFin>21/06/2024</fechaFin>
+                    </fecha>
+
+                </formacion>
+
+            </formacionAcademica>
+
+
+
+            <experienciaLaboral>
+                
+                <trabajo idTrabajo="01">
+
+                    <empresa>Restaurante Everest View</empresa>
+
+                    <lugar>
+                        <localidad>Teulada</localidad>
+                        <provincia>Alicante</provincia>
+                        <codigopostal>03725</codigopostal>
+                        <pais>España</pais>
+                    </lugar>
+
+                    <actividadRealizadas>
+                        <actividad idAct="01">Atender a los clientes</actividad>
+                        <actividad idAct="02">Organizar las mesas</actividad>
+                        <actividad idAct="03">Servir comida y bebidas</actividad>
+                    </actividadRealizadas>
+
+                </trabajo>
+
+                <trabajo idTrabajo="02">
+
+                    <empresa>Digits</empresa>
+
+                    <lugar>
+                        <localidad>Canosa</localidad>
+                        <provincia>Barleta-Andri-Trani</provincia>
+                        <codigopostal>76012</codigopostal>
+                        <pais>Italia</pais>
+                    </lugar>
+
+                </trabajo>
+
+            </experienciaLaboral>
+
+
+            <competenciasLinguisticas>
+
+                <idioma idIdioma="01">
+                    <nombre>Español</nombre>
+                    <nivel>Nativo</nivel>
+                </idioma>
+
+                <idioma idIdioma="02">
+                    <nombre>Inglés</nombre>
+                    <nivel>B2</nivel>
+                </idioma>
+
+                <idioma idIdioma="03">
+                    <nombre>Valenciano</nombre>
+                    <nivel>C1</nivel>
+                </idioma>
+
+                <idioma idIdioma="04">
+                    <nombre>Japonés</nombre>
+                    <nivel>B1</nivel>
+                </idioma>
+
+                <idioma idIdioma="05">
+                    <nombre>Nepalí</nombre>
+                    <nivel>Nativo</nivel>
+                </idioma>
+
+            </competenciasLinguisticas>
+
+            <habilidadesPersonales>
+            
+                <habilidad>Trabajo en equipo</habilidad>
+                <habilidad>Gestión del tiempo</habilidad>
+            
+            </habilidadesPersonales>
+
+    </curriculumPersonal>
