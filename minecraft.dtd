@@ -1,19 +1,31 @@
 <!-- Este es el documento de validación del primer ejercicio que hicimos de XML sobre items del Minecraft-->
 
-<!ELEMENT minecraftItems (item+)>   <!-- Etiqueta raíz su contenido "item" tiene que aparecer obligatoriamente una o varias veces-->
+<!ELEMENT minecraftItems (item)+>   <!-- Etiqueta raíz su contenido "item" tiene que aparecer obligatoriamente una o varias veces-->
 
 <!ATTLIST minecraftItems lang CDATA #FIXED "es">  <!-- Se especifica el atributo de la etiqueta raiz indicando el tipo de datos que es y que es un valor fijo y solo puede ser ese-->
 
-<!ELEMENT item (id, name, type, rarity, damage, description)>
+<!ELEMENT item (name, type, damage, description, (materials)*, (enchantments)*)>
 
-<!ELEMENT id (#PCDATA)>
+<!ATTLIST item id ID #REQUIRED> <!-- Atributo ID de Item-->
+
+<!ATTLIST item rarity (comun|raro|epico) #REQUIRED> <!-- Atributo Rareza de Item-->
 
 <!ELEMENT name (#PCDATA)>
 
 <!ELEMENT type (#PCDATA)>
 
-<!ELEMENT rarity (#PCDATA)>
-
 <!ELEMENT damage (#PCDATA)>
 
 <!ELEMENT description (#PCDATA)>
+
+<!ATTLIST item crafteable (true|false) #REQUIRED> <!-- Atributo para saber si es crafteable el Item-->
+
+<!ELEMENT materials (material)+> 
+
+<!ELEMENT material (#PCDATA)>
+
+<!ELEMENT enchantments (enchantment)+>
+
+<!ELEMENT enchantment (#PCDATA)>
+
+<!ATTLIST item enchantable (true|false) #REQUIRED> <!-- Atributo saber si es crafteable el Item-->
