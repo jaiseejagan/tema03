@@ -1,0 +1,45 @@
+<!-- DTD SOBRE EL ARCHIVO XML DE FIGURAS GEOMÉTRICAS-->
+
+<!--ELEMENTO RAÍZ Y ELEMENTOS DENTRO GENERALES-->
+
+<!ELEMENT escena (figuras)>
+<!ELEMENT figuras (rectangulo, circumferencia, linea)>
+
+
+<!--ELEMENTOS Y ATRIBUTOS DEL RECTÁNGULO-->
+
+<!ELEMENT rectangulo (posicionA)>
+<!ELEMENT posicionA (x, y)>
+<!ELEMENT x (#PCDATA)>
+<!ELEMENT y (#PCDATA)>
+
+<!ATTLIST rectangulo 
+            ancho CDATA #REQUIRED 
+            alto CDATA #REQUIRED>
+
+
+<!--ELEMENTOS Y ATRIBUTOS DE LA CIRCUMFERENCIA-->
+
+<!ELEMENT circumferencia (posicionB)>
+<!ELEMENT posicionB (x2,y2)>
+<!ELEMENT x2 (#PCDATA)>
+<!ELEMENT y2 (#PCDATA)>
+
+<!ATTLIST circumferencia 
+            radio CDATA #REQUIRED>
+
+
+<!--ELEMENTOS Y ATRIBUTOS DE LA LÍNEA-->
+
+<!ELEMENT linea (posicionC)>
+
+<!ELEMENT x3 (#PCDATA)>
+<!ELEMENT y3 (#PCDATA)>
+<!ELEMENT posicionC (origen, destino)>
+<!ELEMENT origen (x3, y3)>
+<!ELEMENT destino (x4, y4)>
+<!ELEMENT x4 (#PCDATA)>
+<!ELEMENT y4 (#PCDATA)>
+
+<!ATTLIST linea 
+            largo CDATA #REQUIRED>
