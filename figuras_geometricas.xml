@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE escena SYSTEM "figuras.dtd">
+ 
+<escena>
+
+    <figuras>
+
+        <rectangulo ancho="150px" alto="120px">
+             
+            <posicionA>
+                <x>150</x>
+                <y>400</y>
+            </posicionA>
+
+        </rectangulo>
+
+        <circumferencia radio="100px">
+
+            <posicionB>
+                <x2>400</x2>
+                <y2>400</y2>
+            </posicionB>
+
+        </circumferencia>    
+
+        <linea largo="100px">
+            
+        <posicionC>
+
+            <origen>
+                <x3>300</x3>
+                <y3>400</y3>
+            </origen>
+
+            <destino>
+                <x4>400</x4>
+                <y4>520</y4>
+            </destino>
+
+        </posicionC>
+
+    </linea>
+
+</figuras>
+
+</escena>
