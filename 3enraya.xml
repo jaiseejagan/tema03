@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tresEnRaya SYSTEM "tresenraya.dtd">
+
+<tresEnRaya lang="es">
+
+    <partidasGuardadas>
+
+        <partida id="P1" estado="completada">
+
+            <!-- REPRESENTACIÓN DEL FUNCIONAMIENTO Y SISTEMA DEL JUEGO
+
+                   A   B   C
+                  ___ ___ ___
+              1  |_O_|_X_|_O_|
+              2  |_O_|_X_|_O_|
+              3  |_X_|_O_|_X_|
+        
+            -->
+
+            <jugadores>
+
+                <jugador>Mateo</jugador>
+                <jugador>Manuel</jugador>
+
+            </jugadores>
+        
+            <turnosJugados>
+
+                <turno movimiento="M1" ficha="O" posesion="Mateo" posicionJugada="A1"></turno> 
+            
+                <turno movimiento="M2" ficha="X" posesion="Manuel" posicionJugada="B2"></turno> 
+
+                <turno movimiento="M3" ficha="O" posesion="Mateo" posicionJugada="A2"></turno> 
+               
+                <turno movimiento="M4" ficha="X" posesion="Manuel" posicionJugada="A3"></turno>
+
+                <turno movimiento="M5" ficha="O" posesion="Mateo" posicionJugada="B3"></turno>
+
+                <turno movimiento="M6" ficha="X" posesion="Manuel" posicionJugada="C3"></turno>
+                
+                <turno movimiento="M7" ficha="O" posesion="Mateo" posicionJugada="C2"></turno>
+
+                <turno movimiento="M8" ficha="X" posesion="Manuel" posicionJugada="B1"></turno>
+
+                <turno movimiento="M9" ficha="O" posesion="Mateo" posicionJugada="C1"></turno>
+                
+            </turnosJugados>
+
+        </partida>
+
+    </partidasGuardadas>
+
+
+</tresEnRaya>
