@@ -1,0 +1,36 @@
+<!--DOCUMENTO DE VALIDACIÓN DEL XML DE TRES EN RAYA!-->
+
+
+<!--ELEMENTOS RAIZ!-->
+
+<!ELEMENT tresEnRaya (partidasGuardadas)>
+<!ELEMENT partidasGuardadas (partida+)>
+
+<!ATTLIST tresEnRaya lang CDATA #FIXED "es">
+<!--ELEMENTOS Y ATRIBUTOS DE "PARTIDA"!-->
+
+<!ELEMENT partida (jugadores, turnosJugados, ganador*)>
+
+<!ATTLIST partida 
+            id ID #REQUIRED
+            estado (incompleta|completada) #REQUIRED>
+
+<!--ELEMENTO DE JUGADORES!-->
+
+<!ELEMENT jugadores (jugador+)>
+<!ELEMENT jugador (#PCDATA)>
+
+<!ATTLIST partida 
+            id ID #REQUIRED
+            estado (incompleta|completada) #REQUIRED>
+
+<!--ELEMENTOS Y ATRIBUTOS DE TURNOS JUGADOS!-->
+
+<!ELEMENT turnosJugados (turno+)>
+<!ELEMENT turno EMPTY>
+
+<!ATTLIST turno
+            movimiento ID #REQUIRED
+            ficha (X|O) #REQUIRED
+            posesion CDATA #REQUIRED
+            posicionJugada (A1|A2|A3|B1|B2|B3|C1|C2|C3) #REQUIRED>
