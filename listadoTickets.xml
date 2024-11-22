@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ticketsVenta SYSTEM "tickets.dtd"> 
+
+<ticketsVenta empresa="PapeleriaD" lang="es">
+
+    <ticket sucursal="PapeleriaD1" cif="10923121A" web="www.papeleriad1.com" telefono="601982310" codigoSucursal="E120102" direccion="Calle Joaquin Costa" ciudad="Valencia" codigoPostal="46005">
+
+        <cabeceraTicket empleado="Jose Martin Morales" id="T1" diaSemana="lunes" dia="18" mes="noviembre" año="2024" hora="10:00"/>
+
+        <ventas>
+
+            <venta nombreProducto="Lápiz de grafito" idProducto="P1" cantidad="100" precioUnidad="1€" oferta="true" porcentajeDescuento="10" precioTotal="90€">
+
+                <descripcionProducto>
+                    Lápiz de grafito ideal para escribir o dibujar 
+                </descripcionProducto>
+
+            </venta>
+
+            <venta nombreProducto="Goma de Borrar" idProducto="P2" cantidad="2" precioUnidad="0,5€" oferta="false" precioTotal="1€">
+    
+                    <descripcionProducto>
+                        Goma de borrar de la marca Manley
+                    </descripcionProducto>
+    
+            </venta>
+
+
+            <venta nombreProducto="Tijeras" idProducto="P3" cantidad="1" precioUnidad="1€" oferta="false" precioTotal="1€">
+    
+                    <descripcionProducto>
+                        Tijeras pequeñas de la marca Cutty
+                    </descripcionProducto>
+    
+            </venta>
+
+        
+        </ventas>
+
+        <resumenVentas idVenta="V1" importeTotal="92€" metodoPago="tarjeta"/>
+        
+    </ticket>
+
+    <ticket sucursal="PapeleriaD2" cif="10923121A" web="www.papeleriad2.com" telefono="640112091" codigoSucursal="E120311" direccion="Calle LaCosta" ciudad="Madrid" codigoPostal="3002">
+
+        <cabeceraTicket empleado="Maria Moncho Higuera" id="T2" diaSemana="lunes" dia="18" mes="noviembre" año="2024" hora="12:00"/>
+
+        <ventas>
+
+            <venta nombreProducto="Lápiz de grafito" idProducto="P1" cantidad="50" precioUnidad="1€" oferta="true" porcentajeDescuento="10" precioTotal="45€">
+
+                <descripcionProducto>
+                    Lápiz de grafito ideal para escribir o dibujar 
+                </descripcionProducto>
+                
+            </venta>
+
+            <venta nombreProducto="Pack boligrafos" idProducto="P4" cantidad="30" precioUnidad="3€" oferta="true" porcentajeDescuento="10" precioTotal="81€">
+
+                <descripcionProducto>
+                    Pack de bolígrafos de diferentes colores de la marca BIC
+                </descripcionProducto>
+                
+            </venta>
+
+            <venta nombreProducto="Sacapuntas" idProducto="P5" cantidad="1" precioUnidad="1€" oferta="false" precioTotal="1€">
+
+                <descripcionProducto>
+                    Sacapuntas para lápices de la marca RICO
+                </descripcionProducto>
+                
+            </venta>
+        
+        </ventas>
+
+        <resumenVentas idVenta="V2" importeTotal="127€" metodoPago="efectivo"/>
+        
+    </ticket>
+
+</ticketsVenta>

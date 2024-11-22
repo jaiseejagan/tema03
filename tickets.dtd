@@ -1,0 +1,54 @@
+
+<!--ELMENTOS RAIZ Y ELEMENTOS GENERALES!-->
+
+<!ELEMENT ticketsVenta (ticket+)>
+<!ELEMENT ticket (cabeceraTicket+, ventas*, resumenVentas)>
+
+<!ELEMENT cabeceraTicket EMPTY>
+
+<!ELEMENT ventas (venta+)>
+<!ELEMENT venta (descripcionProducto)>
+<!ELEMENT descripcionProducto (#PCDATA)>
+
+<!ELEMENT resumenVentas EMPTY>
+
+
+<!--ATRIBUTOS!-->
+
+<!ATTLIST ticketsVenta
+            empresa CDATA #FIXED "PapeleriaD"
+            lang CDATA #FIXED "es">
+
+<!ATTLIST ticket 
+            sucursal CDATA #REQUIRED
+            cif CDATA #REQUIRED
+            web CDATA #REQUIRED
+            telefono CDATA #REQUIRED
+            codigoSucursal CDATA #REQUIRED
+            direccion CDATA #REQUIRED
+            ciudad CDATA #REQUIRED
+            codigoPostal CDATA #REQUIRED>
+
+
+<!ATTLIST cabeceraTicket
+            empleado CDATA #REQUIRED
+            id ID #REQUIRED
+            diaSemana (lunes|martes|miercoles|jueves|viernes) #REQUIRED
+            dia (1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|31) #REQUIRED
+            mes (enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|deciembre) #REQUIRED
+            año (2022|2023|2024|2025|2026|2027|2028|2029|2030|2031|2032|2033|2034|2035|2036|2037|2038|2039|2040) #REQUIRED
+            hora CDATA #REQUIRED>
+
+<!ATTLIST venta 
+            nombreProducto CDATA #REQUIRED
+            idProducto CDATA #REQUIRED
+            cantidad CDATA #REQUIRED
+            precioUnidad CDATA #REQUIRED
+            oferta (true|false) #REQUIRED
+            porcentajeDescuento (0|10|20|30|40|50) #IMPLIED
+            precioTotal CDATA #REQUIRED>
+
+<!ATTLIST resumenVentas
+            idVenta ID #REQUIRED
+            metodoPago (tarjeta|efectivo) #REQUIRED
+            importeTotal CDATA #REQUIRED>
