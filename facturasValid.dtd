@@ -1,0 +1,68 @@
+<!--ELEMENTOS RAIZ!-->
+
+<!ELEMENT listadoFacturas (membrete, clientes, productos, facturas)>
+
+<!ATTLIST listadoFacturas 
+            lang CDATA #FIXED "es">
+
+<!--ATRIBUTOS MEMBRETE RAIZ!-->
+
+<!ELEMENT membrete EMPTY>
+<!ATTLIST membrete 
+            cif CDATA #REQUIRED
+            nombreEmpresa CDATA #REQUIRED
+            web CDATA #REQUIRED
+            direccion CDATA #REQUIRED
+            codigoPostal CDATA #REQUIRED
+            poblacion CDATA #REQUIRED
+            telefono CDATA #REQUIRED
+            email CDATA #REQUIRED>
+
+
+<!--ELEMENTOS Y ATRIBUTOS DE CLIENTES!-->
+
+<!ELEMENT clientes (cliente+)>
+<!ELEMENT cliente EMPTY>
+<!ATTLIST cliente
+            idCliente ID #REQUIRED
+            dni CDATA #REQUIRED
+            nombre CDATA #REQUIRED
+            apellidos CDATA #REQUIRED
+            direccionFacturacion CDATA #REQUIRED
+            codigoPostal CDATA #REQUIRED
+            poblacion CDATA #REQUIRED>
+
+<!--ELEMENTOS Y ATRIBUTOS DE PRODUCTOS!-->
+
+<!ELEMENT productos (producto+)>
+<!ELEMENT producto (descripcion)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ATTLIST producto
+            idProducto ID #REQUIRED
+            precioUnitario CDATA #REQUIRED
+            ivaAplicado CDATA #REQUIRED>
+
+<!--ELEMENTOS Y ATRIBUTOS DE FACTURAS!-->
+
+<!ELEMENT facturas (factura+)>
+<!ELEMENT factura (destinatario, lineasFactura, resumenFactura)>
+<!ELEMENT destinatario EMPTY>
+<!ELEMENT lineasFactura (linea+)>
+<!ELEMENT linea EMPTY>
+<!ELEMENT resumenFactura EMPTY>
+
+<!ATTLIST factura 
+            numeroFactura ID #REQUIRED
+            fechaEmision CDATA #REQUIRED>
+
+<!ATTLIST destinatario
+            idRefCliente IDREFS #REQUIRED>
+
+<!ATTLIST linea
+            idRefProducto IDREFS #REQUIRED
+            unidadesAdquiridas CDATA #REQUIRED>
+
+<!ATTLIST resumenFactura
+            descuento (true|false) #REQUIRED
+            porcentajeDescuento CDATA #IMPLIED
+            metodoPago (efectivo|tarjeta|transferencia) #REQUIRED>
