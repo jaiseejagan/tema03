@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listadoFacturas SYSTEM "facturasValid.dtd">
+
+<listadoFacturas lang="es">
+
+    <membrete cif="M01921322" nombreEmpresa="PaperAB" web="www.paperab.es" direccion="Calle Benissa" codigoPostal="28001" poblacion="Madrid" telefono="601901223" email="paperab@gmail.com"/>
+        
+    <clientes>
+
+        <cliente idCliente="C1" dni="61023912Z" nombre="Mateo Higueras" apellidos="Pesti" direccionFacturacion="Calle Valencia" codigoPostal="28010" poblacion="Madrid"/>
+
+        <cliente idCliente="C2" dni="01029312B" nombre="Maria Serra" apellidos="Lana" direccionFacturacion="Calle Juan Carlos I" codigoPostal="2800" poblacion="Madrid"/>
+
+        <cliente idCliente="C3" dni="10221401A" nombre="Josep Ivars" apellidos="Marcas" direccionFacturacion="Calle Pedrera" codigoPostal="2901" poblacion="Valencia"/>
+            
+
+    </clientes> 
+
+    <productos>
+        
+        <producto idProducto="P1" precioUnitario="6€" ivaAplicado="21" >
+
+            <descripcion>Láminas de papel</descripcion>
+        
+         </producto>
+            
+        <producto idProducto="P2" precioUnitario="1€" ivaAplicado="21">
+            
+            <descripcion>Lápiz</descripcion>
+        
+        </producto>
+
+        <producto idProducto="P3" precioUnitario="15€" ivaAplicado="21">
+            
+            <descripcion>Pack Subrayadores</descripcion>
+            
+        </producto>
+
+    </productos>
+
+
+    <facturas>
+
+        <factura numeroFactura="F1" fechaEmision="30-10-2024">
+
+            <destinatario idRefCliente="C1"/>
+
+            <lineasFactura>
+
+                <linea idRefProducto="P1" unidadesAdquiridas="5"/>
+                <linea idRefProducto="P2" unidadesAdquiridas="10"/>
+                <linea idRefProducto="P3" unidadesAdquiridas="30"/>
+                
+           </lineasFactura>
+
+           <resumenFactura descuento="true" porcentajeDescuento="10" metodoPago="efectivo"/>
+
+        </factura>
+
+        <factura numeroFactura="F2" fechaEmision="31-10-2024">
+
+            <destinatario idRefCliente="C3"/>
+
+            <lineasFactura>
+
+                <linea idRefProducto="P1" unidadesAdquiridas="1"/>
+                <linea idRefProducto="P2" unidadesAdquiridas="6"/>
+                <linea idRefProducto="P3" unidadesAdquiridas="5"/>
+                
+           </lineasFactura>
+
+           <resumenFactura descuento="false" metodoPago="tarjeta"/>
+
+        </factura>
+
+    </facturas>
+
+</listadoFacturas>
